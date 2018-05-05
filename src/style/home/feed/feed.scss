@@ -1,0 +1,13 @@
+.feed {
+    display: block;
+    width: 450px;
+    height: 200px;
+    background: red;
+
+    .feed-posts{
+        .feed-posts-post{
+            width: 100%;
+            background: gray;
+        }
+    }
+}

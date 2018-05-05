@@ -4,6 +4,7 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
+import InfiniteLoading from 'vue-infinite-loading'
 import './style/app.scss'
 
 Vue.config.productionTip = false
