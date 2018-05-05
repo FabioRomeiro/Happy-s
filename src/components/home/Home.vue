@@ -1,19 +1,26 @@
 <template>
-  <div class="home-corpo">
-      <!-- <perfil-lateral/> -->
-      <div class="conteudo">
-        <feed/>
-      </div>
-  </div>
+  <main>
+    <div>
+      <h2>PAGINA HOME</h2>
+      <home-input></home-input>
+    </div>
+    <perfil-lateral/>
+    <div class="conteudo">
+      <feed/>
+    </div>
+  </main>
 </template>
 
 <script>
-import PerfilLateral from '../perfilLateral/PerfilLateral.vue';
-import Feed from './Feed.vue';
-  export default {
-  components : {
-  'perfil-lateral' : PerfilLateral,
-  'feed' : Feed
+import HomeInput from './HomeInput'
+import PerfilLateral from '../perfilLateral/PerfilLateral.vue'
+import Feed from './Feed.vue'
+
+export default {
+  components: {
+    HomeInput,
+    PerfilLateral,
+    Feed
   }
 }
 </script>
