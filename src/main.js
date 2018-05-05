@@ -4,6 +4,7 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
+import store from './storage'
 import InfiniteLoading from 'vue-infinite-loading'
 import './style/app.scss'
 
