@@ -1,25 +1,29 @@
 {
-    "users" : [
-        {
-            "id" : 0,
-            "login" : "flromeiroc",
-            "password" : "teste123",
-            "name" : "Fabio",
-            "sentimentos": 65
-        },
-        {
-            "id" : 1,
-            "login" : "flromeiroasdasdsadc",
-            "password" : "teste12354",
-            "name": "Fabio2",
-            "sentimentos": 36
-        },
-        {
-            "id" : 2,
-            "login" : "flromeiroc2",
-            "password" : "teste1233",
-            "name": "Fabio3",
-            "sentimentos": 8465
-        }
-    ]
+  "users": [
+    {
+      "id": 0,
+      "login": "usuario0",
+      "name": "usuario0",
+      "password": "senha0"
+    },
+    {
+      "id": 1,
+      "login": "usuario1",
+      "name": "usuario1",
+      "password": "senha1"
+    },
+    {
+      "id": 2,
+      "login": "usuario2",
+      "name": "usuario2",
+      "password": "senha2"
+    }
+  ],
+  "posts": [
+    {
+      "isAnonimo": true,
+      "message": "Alguem me ajuda",
+      "userId": 0
+    }
+  ]
 }
