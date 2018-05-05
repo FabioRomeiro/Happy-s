@@ -1,0 +1,22 @@
+{
+    "users" : [
+        {
+            "id" : 0,
+            "login" : "flromeiroc",
+            "password" : "teste123",
+            "sentimentos": 65
+        },
+        {
+            "id" : 1,
+            "login" : "flromeiroasdasdsadc",
+            "password" : "teste12354",
+            "sentimentos": 36
+        },
+        {
+            "id" : 2,
+            "login" : "flromeiroc2",
+            "password" : "teste1233",
+            "sentimentos": 8465
+        }
+    ]
+}

@@ -1,11 +1,15 @@
 <template>
   <div>
-      <h2>PAGINA HOME</h2>
+      <perfil-lateral/>
   </div>
 </template>
 
 <script>
+  import PerfilLateral from '../perfilLateral/PerfilLateral.vue';
 export default {
+  components : {
+    'perfil-lateral' : PerfilLateral
+  }
 }
 </script>
 

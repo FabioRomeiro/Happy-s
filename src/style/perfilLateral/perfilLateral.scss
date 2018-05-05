@@ -1,0 +1,26 @@
+.perfil-lateral{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    background: red;
+}
+
+.perfil-lateral-logo{
+    margin-bottom: 20px;
+}
+
+.perfil-lateral-username{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.perfil-lateral-infos{
+    padding: 5px;
+    margin: 10px 0;
+    background: gray;
+    text-align: left;
+}

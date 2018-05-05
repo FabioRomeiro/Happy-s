@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <aside>Menu de lado</aside>
     <router-view/>
   </div>
 </template>
