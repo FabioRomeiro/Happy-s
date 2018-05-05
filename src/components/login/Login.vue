@@ -21,7 +21,10 @@ export default {
         .get(`http://localhost:3000/users?login=${user.login}&password=${user.password}`)
         .then(response => response.json())
         .then(response => {
-          if (response.length) this.$router.push('home')
+          if (response.length) {
+            this.$store.commit('setUser', response[0])
+            this.$router.push('home')
+          }
         })
     }
   }
@@ -30,4 +33,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 </style>

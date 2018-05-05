@@ -4,8 +4,8 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
-import store from './storage'
 import InfiniteLoading from 'vue-infinite-loading'
+import store from './storage/index'
 import './style/app.scss'
 
 Vue.config.productionTip = false
@@ -17,5 +17,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 })

@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 0,
-      "login": "usuario0",
+      "login": "a",
       "name": "usuario0",
-      "password": "senha0"
+      "password": "a"
     },
     {
       "id": 1,

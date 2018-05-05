@@ -17,6 +17,16 @@ import PerfilLateral from '../perfilLateral/PerfilLateral.vue'
 import Feed from './Feed.vue'
 
 export default {
+  created () {
+    if (!this.isLogado) {
+      this.$router.push('login')
+    }
+  },
+  computed: {
+    isLogado () {
+      return this.$store.state.user
+    }
+  },
   components: {
     HomeInput,
     PerfilLateral,
