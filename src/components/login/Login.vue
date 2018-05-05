@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h2>PAGINA HOME</h2>
+      <h2>PAGINA DE LOGIN</h2>
   </div>
 </template>
 
