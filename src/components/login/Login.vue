@@ -17,12 +17,12 @@ export default {
   },
   methods: {
     efetuarLogin (user) {
-     this.$http
-      .get(`http://localhost:3000/users?login=${user.login}&password=${user.password}`)
-      .then(response => response.json())
-      .then(response => {
-        if (response.length) this.$router.push('home')
-      })
+      this.$http
+        .get(`http://localhost:3000/users?login=${user.login}&password=${user.password}`)
+        .then(response => response.json())
+        .then(response => {
+          if (response.length) this.$router.push('home')
+        })
     }
   }
 }
