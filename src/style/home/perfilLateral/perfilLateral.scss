@@ -22,14 +22,6 @@
             top:100%;
             right: 2%;
         }
-        span::before{
-            content: '';
-            height: 0;
-            width: 0;
-            border:15px solid transparent;
-            border-bottom: 15px solid #fdb913;
-            transform: scaleY(8);
-        }
 
         .perfil-lateral-logo{
             height: 40px;

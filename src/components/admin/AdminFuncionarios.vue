@@ -20,12 +20,12 @@
         <div class="dado">
           <span class="numero">{{ curtidasNoPost }}</span>
           <p>Curtidas no post</p>
-          
+
         </div>
         <div class="dado">
           <span class="numero">{{ curtidasEmComentario }}</span>
           <p>Curtidas em comentarios</p>
-          
+
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@ export default {
     },
     filtroUsuarios () {
       if (!this.search) return
-      const regex = new RegExp(this.search, 'g')
+      const regex = new RegExp(this.search, 'gi')
       return this.users.filter(user => user.name.match(regex))
     },
     curtidasNoPost () {

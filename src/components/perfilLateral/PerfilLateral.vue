@@ -12,7 +12,9 @@
       </div>
     </div>
     <div @click="avisaLogout()" class="perfil-lateral-user">
-      <span @click="logout()" class="logout" v-if="visivel">Sair da Seção?</span>
+      <span @click="logout()" class="logout" v-if="visivel">
+        Sair da Seção?
+      </span>
       <h3 class="perfil-lateral-username">
         {{usuarioLogado.name}}
       </h3>
@@ -40,7 +42,7 @@ export default{
     },
     logout(){
       this.$store.commit('setUser',null);
-      this.route.push('login');
+      this.$router.push('login');
     }
   }
 }
