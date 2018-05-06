@@ -86,9 +86,7 @@
       "message": "O segredo para se ser feliz no amor é nunca deixar de acreditar nele. Bom dia para todos aqueles que transformam tristeza em alegria e fazem do sorriso seu gênero de vida.",
       "isAnonimo": false,
       "userId": 0,
-      "curtidores": [
-        0
-      ],
+      "curtidores": [],
       "like": 1,
       "date": "2018-05-06T06:21:32.092Z",
       "title": "",
@@ -100,9 +98,7 @@
           "message": "Seja feliz com o que tem, fique feliz por ser quem você é.",
           "like": 1,
           "isAnonimo": false,
-          "curtidores": [
-            0
-          ],
+          "curtidores": [],
           "id": 15
         }
       ]
@@ -125,9 +121,7 @@
           "message": "Abraça o que te faz sorrir.",
           "like": 1,
           "isAnonimo": false,
-          "curtidores": [
-            0
-          ],
+          "curtidores": [],
           "id": 12
         }
       ]
@@ -149,9 +143,7 @@
       "message": "Se quiser encontrar sua felicidade na Terra, deve começar a esquecer as ofensas. Perdoe a todos pelo mal que lhe fizeram.",
       "like": 0,
       "isAnonimo": false,
-      "curtidores": [
-        0
-      ],
+      "curtidores": [],
       "id": 8
     },
     {
@@ -187,10 +179,7 @@
       "message": "Abraça o que te faz sorrir.",
       "like": 2,
       "isAnonimo": false,
-      "curtidores": [
-        0,
-        0
-      ],
+      "curtidores": [],
       "id": 12
     },
     {
@@ -208,9 +197,7 @@
       "message": "A felicidade não é um destino. É um método de vida.",
       "like": 0,
       "isAnonimo": false,
-      "curtidores": [
-        0
-      ],
+      "curtidores": [],
       "id": 14
     },
     {
@@ -219,9 +206,7 @@
       "message": "Seja feliz com o que tem, fique feliz por ser quem você é.",
       "like": 6,
       "isAnonimo": false,
-      "curtidores": [
-        0
-      ],
+      "curtidores": [],
       "id": 15
     },
     {
@@ -239,9 +224,7 @@
       "message": "Só merece a felicidade quem acorda todos os dias disposto a conquistá-la.",
       "like": 0,
       "isAnonimo": false,
-      "curtidores": [
-        0
-      ],
+      "curtidores": [],
       "id": 17
     },
     {

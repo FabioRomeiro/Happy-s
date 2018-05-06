@@ -27,7 +27,7 @@
 export default{
   data () {
     return {
-      visivel : false
+      visivel: false
     }
   },
   computed: {
@@ -36,13 +36,13 @@ export default{
     }
   },
   methods:{
-    avisaLogout(){
+    avisaLogout () {
       this.visivel = !this.visivel
       return this.visivel;
     },
-    logout(){
-      this.$store.commit('setUser',null);
-      this.$router.push('login');
+    logout () {
+      this.$store.commit('setUser', null)
+      this.$router.push('login')
     }
   }
 }

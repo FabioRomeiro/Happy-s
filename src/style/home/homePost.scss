@@ -79,6 +79,10 @@
   color: #004A5D;
   cursor: pointer;
 
+  &:hover {
+    opacity: .8;
+  }
+
   &.active {
     color: lighten(#004A5D, 20%);
   }
