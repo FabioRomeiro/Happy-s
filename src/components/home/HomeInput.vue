@@ -23,17 +23,18 @@ export default {
       post: {
         message: '',
         isAnonimo: false,
-        userId: this.$store.state.user.id
+        userId: this.$store.state.user.id,
+        comentarios: []
       }
     }
   },
   methods: {
-    sendPost () {
-      this.post.date = new Date()
+    sendPost (post) {
+      post.date = new Date()
       this.$http
-        .post('http://localhost:3000/posts', this.post)
+        .post('http://localhost:3000/posts', post)
         .then(() => {
-          const newPost = Object.assign({}, this.post)
+          const newPost = Object.assign({}, post)
           this.$emit('newPost', newPost)
           this.post.message = ''
           this.post.title = ''

@@ -37,4 +37,7 @@ export default{
 </script>
 
 <style>
+  .perfil-lateral {
+    position: relative;
+  }
 </style>

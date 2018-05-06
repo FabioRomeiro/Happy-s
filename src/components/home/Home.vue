@@ -1,8 +1,7 @@
 <template>
-  <main class="home-corpo">
-
+  <main>
     <perfil-lateral/>
-    
+
     <div class="home-postagens">
       <div>
         <home-input @newPost="addNewPost"></home-input>
@@ -14,13 +13,7 @@
             infinite-scroll-distance="10">
           <ul class="feed-posts">
             <li class="feed-posts-post" v-for="post in postsByDate" :key="post.id">
-              
-              <div class="post-user">
-                <img src="" alt="user">
-                <span>Nome do user</span>
-              </div>
-              <p class="post-conteudo">{{post.message}}</p>
-              <p>data {{ post.date |  moment('DD/MM/YYYY hh:mm:ss') }}</p>
+              <home-post :post="post"></home-post>
             </li>
           </ul>
         </div>
@@ -31,6 +24,7 @@
 
 <script>
 import HomeInput from './HomeInput'
+import HomePost from './HomePost'
 import PerfilLateral from '../perfilLateral/PerfilLateral.vue'
 
 export default {
@@ -77,7 +71,8 @@ export default {
   },
   components: {
     HomeInput,
-    PerfilLateral
+    PerfilLateral,
+    HomePost
   }
 }
 </script>
