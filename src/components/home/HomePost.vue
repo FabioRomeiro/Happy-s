@@ -1,29 +1,27 @@
 <template>
   <div>
     <!-- post -->
-    <div>
+    <div class="post-container">
       <div class="post-user">
         <img src="" alt="user">
         <span>Nome do user</span>
       </div>
       <p class="post-conteudo">{{post.message}}</p>
-      <p>data {{ post.date |  moment('DD/MM/YYYY hh:mm:ss') }}</p>
-      <p>like: {{ post.like }}</p>
-      <button :disabled="jaCurtiu" @click="curtir(post)">curtir o post</button>
 
       <div class="post-opinar">
+        <button class="post-like" :disabled="jaCurtiu" @click="curtir(post)">Curtir</button>
         <div class="post-novo-comentario">
           <!-- novo comentario -->
-          <textarea v-model="novoComentario.message"></textarea>
 
           <div class="novo-comentario-position">
             <label>
               <input v-model="novoComentario.isAnonimo" type="checkbox">
               Anônimo
             </label>
-            <button @click="sendComentario(novoComentario)">comentar</button>
+            <button @click="sendComentario(novoComentario)">Comentar</button>
           </div>
 
+          <textarea v-model="novoComentario.message"></textarea>
         </div>
       </div>
 

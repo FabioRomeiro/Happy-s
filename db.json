@@ -36,9 +36,23 @@
       "message": "asassas",
       "isAnonimo": false,
       "userId": 0,
-      "comentarios": [],
-      "curtidores": [],
-      "like": 0,
+      "comentarios": [
+        {
+          "idPost": 2,
+          "idUsuario": 0,
+          "message": "aaaaaaa",
+          "like": 1,
+          "isAnonimo": false,
+          "curtidores": [
+            0
+          ],
+          "id": 1
+        }
+      ],
+      "curtidores": [
+        0
+      ],
+      "like": 1,
       "date": "2018-05-06T06:21:32.092Z",
       "title": "",
       "id": 2
