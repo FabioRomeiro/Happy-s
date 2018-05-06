@@ -1,11 +1,22 @@
 <template>
   <aside class="perfil-lateral">
-    <img class="perfil-lateral-logo" src="../../assets/logo.png" alt="logo da plataforma">
-    <h3 class="perfil-lateral-username">{{userInfo.name}}</h3>
-    <ul class="perfil-lateral-infos">
-        <li>Posts escritos: 545</li>
-        <li>Sentimentos recebidos: {{userInfo.sentimentos}}</li>
-    </ul>
+    <h1 class="titulo">Happy's</h1>
+    <div class="perfil-notificacoes">
+
+      <div class="notificacoes-icone">
+        <span>Mensagens</span>
+        <img src="../../assets/msg.svg" alt="mensagens">
+      </div>
+      <div class="notificacoes-icone">
+        <span>Notificações</span>
+        <img src="../../assets/notificacao.svg" alt="notificacoes">
+      </div>
+    
+    </div>
+    <div class="perfil-lateral-user">
+      <h3 class="perfil-lateral-username">{{userInfo.name}}</h3>
+      <img class="perfil-lateral-logo" src="../../assets/logo.png" alt="logo da plataforma">
+    </div>
   </aside>
 </template>
 

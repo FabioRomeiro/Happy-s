@@ -1,22 +1,29 @@
 <template>
-  <main>
+  <main class="home-corpo">
+
     <perfil-lateral/>
-    <div>
-      <h2>PAGINA HOME</h2>
-      <home-input @newPost="addNewPost"></home-input>
-    </div>
-    <div class="conteudo">
-      <div class="feed"
-           v-infinite-scroll="loadMore"
-           infinite-scroll-disabled="busy"
-           infinite-scroll-distance="10">
-        <ul class="feed-posts">
-          <li class="feed-posts-post" v-for="post in postsByDate" :key="post.id">
-            <p class="post-topico">{{post.title}}</p>
-            <p class="post-conteudo">{{post.message}}</p>
-            <p>data {{ post.date |  moment('DD/MM/YYYY hh:mm:ss') }}</p>
-          </li>
-        </ul>
+    
+    <div class="home-postagens">
+      <div>
+        <home-input @newPost="addNewPost"></home-input>
+      </div>
+      <div class="conteudo">
+        <div class="feed"
+            v-infinite-scroll="loadMore"
+            infinite-scroll-disabled="busy"
+            infinite-scroll-distance="10">
+          <ul class="feed-posts">
+            <li class="feed-posts-post" v-for="post in postsByDate" :key="post.id">
+              
+              <div class="post-user">
+                <img src="" alt="user">
+                <span>Nome do user</span>
+              </div>
+              <p class="post-conteudo">{{post.message}}</p>
+              <p>data {{ post.date |  moment('DD/MM/YYYY hh:mm:ss') }}</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>

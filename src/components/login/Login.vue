@@ -19,8 +19,21 @@
         <img src="../../assets/boi.svg" alt="boi">
       </div>
       <div class="banner-info">
-        <h3>Um lugar para</h3>
-        <span class="keyword"><vue-typer :text='[message[0], message[1]]' :shuffle='true'></vue-typer></span>
+        <div class="banner-slogan">
+          <h3>Um lugar para</h3>
+          <span class="keyword"><vue-typer :text='[message[0], message[1]]'></vue-typer></span>
+        </div>
+        <div class="banner-cadastro-form">
+          <div class="form-nome">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Sobrenome">
+          </div>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="senha">
+          <div class="form-botao">
+            <button>CADASTRE-SE</button>
+          </div>
+        </div>
       </div>
       
       <!--FAZER COMPONENTE SEPARADO-->
@@ -43,7 +56,7 @@ export default {
   data () {
     return {
       user: {},
-      message : ['ajudar', 'ser ajudado']
+      message : ['ajudar!', 'ser ajudado!']
     }
   },
   methods: {

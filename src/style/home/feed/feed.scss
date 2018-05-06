@@ -1,13 +1,20 @@
+body{
+    background:#ffe583;
+}
 .feed {
     display: block;
-    width: 450px;
     height: 200px;
-    background: red;
 
     .feed-posts{
+        width: 100%;
+        background: #e3e3e3;
+        padding-top: 1%;
         .feed-posts-post{
-            width: 100%;
-            background: gray;
+            width: 70%;
+            margin: 3% auto;
+            background: #f7f7f7;
+            padding: 1%;
+            border: solid 2px #bdbdbd;
         }
     }
 }

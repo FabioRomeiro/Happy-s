@@ -1,13 +1,16 @@
 <template>
-  <div>
-    <input v-model="post.title" type="text" placeholder="titulo">
-    <textarea v-model="post.message"></textarea>
-    <div>
-      <label>
-        <input v-model="post.isAnonimo" type="checkbox">
-        Anônimo
-      </label>
-      <button @click="sendPost(post)">Enviar</button>
+  <div class="home-container">
+    <div class="home-text-input">
+      <textarea v-model="post.message" placeholder="O que você gostaria de compartilhar?"></textarea>
+    </div>
+    <div class="home-options">
+
+        <label>
+          <input class="home-options-check" v-model="post.isAnonimo" type="checkbox">
+          Anônimo
+        </label>
+        <button @click="sendPost(post)">PUBLICAR</button>
+
     </div>
   </div>
 </template>

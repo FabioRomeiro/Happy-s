@@ -1,3 +1,10 @@
 .home-corpo{
     display: flex;
+    flex-direction: column;
+}
+
+.home-postagens{
+    width: 75%;
+    margin: 0 auto;
+    background: rgb(192, 192, 192);
 }
