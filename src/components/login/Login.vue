@@ -35,17 +35,6 @@
           </div>
         </div>
       </div>
-
-      <!--FAZER COMPONENTE SEPARADO-->
-      <!-- <h1>[NomeDoProjeto]</h1>
-      <p>Momentos de tristeza e dificuldade são momentos de fragilidade.</p>
-      <p class="banner-fade-palavras">
-        <span>Uma</span>
-        <span class="keyword"><vue-typer :text='[message[0], message[1], message[2]]' :shuffle='true'></vue-typer></span>
-      </p>
-      <p>é sempre bem vinda nessas situações...</p>
-      <p>Pensando na sua felicidade e tranquilidade, [a/o] [NomeDoProjeto] concentra estas pequenas palavras que te trarão um grande conforto</p>
-      <p></p> -->
     </div>
   </div>
 </template>
@@ -79,5 +68,52 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+  $duracao: 800ms;
+
+  .login-corpo {
+    animation: intro-menu;
+    animation-play-state: unset;
+    animation-duration: $duracao;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    @keyframes intro-menu {
+      0% {
+        transform: translateY(-200px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .banner-image {
+    animation: intro-boi;
+    animation-play-state: unset;
+    animation-duration: $duracao;
+
+    @keyframes intro-boi {
+      0% {
+        transform: translateX(-500px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .banner-info {
+    animation: intro-info;
+    animation-play-state: unset;
+    animation-duration: $duracao;
+
+    @keyframes intro-info {
+      0% {
+        transform: translateX(500px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
 </style>

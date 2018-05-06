@@ -51,5 +51,19 @@ export default{
 <style>
   .perfil-lateral {
     position: relative;
+    animation: intro-menu;
+    animation-play-state: unset;
+    animation-duration: 500ms;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    @keyframes intro-menu {
+      0% {
+        transform: translateY(-200px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
   }
+
 </style>
