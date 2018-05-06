@@ -1,13 +1,29 @@
 <template>
   <div>
     <!-- post -->
-    <div>
+    <div class="post-container">
       <div class="post-user">
         <img src="" alt="user">
         <span>Nome do user</span>
       </div>
       <p class="post-conteudo">{{post.message}}</p>
-      <p>data {{ post.date |  moment('DD/MM/YYYY hh:mm:ss') }}</p>
+      
+      <div class="post-opinar">
+        <div class="post-novo-comentario">
+          <!-- novo comentario -->
+          <textarea v-model="novoComentario.message"></textarea>
+          
+          <div class="novo-comentario-position">
+            <label>
+              <input v-model="novoComentario.isAnonimo" type="checkbox">
+              Anônimo
+            </label>
+            <button @click="sendComentario(novoComentario)">comentar</button>
+          </div>
+
+        </div>
+      </div>
+      
     </div>
     <!-- comentarios -->
     <div>
@@ -17,15 +33,7 @@
         </li>
       </ul>
     </div>
-    <!-- novo comentario -->
-    <div>
-      <textarea v-model="novoComentario.message"></textarea>
-      <label>
-        <input v-model="novoComentario.isAnonimo" type="checkbox">
-        Anônimo
-      </label>
-      <button @click="sendComentario(novoComentario)">comentar</button>
-    </div>
+    
   </div>
 </template>
 

@@ -1,0 +1,26 @@
+.post-container{
+    padding: 0 4% 4% 4%;
+    
+    .post-user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3%;
+    }
+
+    .post-conteudo{
+        margin-bottom: 3%;
+    }
+}
+.novo-comentario-position{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.post-novo-comentario{
+    display: flex;
+
+    textarea{
+        border-radius: 5px;
+    }
+}
