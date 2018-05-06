@@ -1,16 +1,16 @@
 <template>
-  <div class="home-container">
-    <div class="home-text-input">
-      <textarea v-model="post.message" placeholder="O que você gostaria de compartilhar?"></textarea>
-    </div>
-    <div class="home-options">
-
+  <div class="home-input">
+    <div class="home-input__container">
+      <div class="home-input__enter">
+        <textarea v-model="post.message" placeholder="O que você gostaria de compartilhar?"></textarea>
+      </div>
+      <div class="home-input__options">
         <label>
           <input class="home-options-check" v-model="post.isAnonimo" type="checkbox">
           Anônimo
         </label>
         <button @click="sendPost(post)">PUBLICAR</button>
-
+      </div>
     </div>
   </div>
 </template>

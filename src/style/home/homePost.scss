@@ -1,66 +1,85 @@
-.post-container{
-    padding: 0 4% 4% 4%;
-    
-    .post-opinar{
+.post {
+  margin-bottom: 24px;
+}
+
+.post-content {
+  border: solid 2px #cacaca;
+
+  &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      border-top: solid 2px #cacaca;
+      padding: 8px 16px;
+
+    .group{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+      }
+  }
 
-        border-top: solid 2px #a5a5a5;
+  &__user {
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
 
-        padding: 2%;
+      img {
+        $size: 40px;
+        height: $size;
+        width: $size;
+        border-radius: 50%;
+        border: 2px solid #a5a5a5;
+        margin-right: 2%;
+      }
+  }
 
-        .post-like{
-            height: 30px;
-            background: inherit;
-            border: none; 
-            cursor: pointer;  
-            font-weight: 700;
-        }
+  &__text {
+    font-size: 16px;
+    padding: 0 32px 16px 32px;
+  }
+
+  &__new {
+    padding: 16px;
+    max-width: 760px;
+    position: relative;
+
+    textarea {
+      width: 100%;
     }
-    .post-user{
-        display: flex;
-        align-items: center;
-        margin-bottom: 3%;
 
-        img{
-            height: 70px;
-            border-radius: 50px;
-            margin-right: 2%;
-        }
+    .group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
 
-    .post-conteudo{
-        margin-bottom: 3%;
-        margin-left: 2%;
+    button {
+      font-size: 16px;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background: #ccc;
+      border: none;
+      cursor: pointer;
+      transition: all 250ms ease-in;
+
+      &:hover {
+        background-color: #ddd;
+      }
     }
+  }
 }
-.novo-comentario-position{
-    display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    width: 45%;
-}
-button{
-        height: 30px;
-        background: inherit;
-        border: none; 
-        cursor: pointer;  
-        font-weight: 700;
-        margin-top: 2px;
-    }
 
-.post-novo-comentario{
-    display: flex;
+.link {
+  background: none;
+  outline-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #004A5D;
+  cursor: pointer;
 
-    textarea{
-        border-radius: 5px;
-        resize: none;
-    }
-}
-
-.posts-comentarios{
-    background: #cacaca;
-    padding: 10px;
-    border-radius: 5px;
+  &.active {
+    color: lighten(#004A5D, 20%);
+  }
 }

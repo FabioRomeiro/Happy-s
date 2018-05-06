@@ -6,7 +6,8 @@
         <h4>{{ user.name }}</h4>
         <p>{{ comentario.message }}</p>
       </div>
-      <button :disabled="jaCurtiu" @click="curtir(comentario)">curtir comentario</button>
+      <button class="link" :class="{'active': jaCurtiu}" :disabled="jaCurtiu" @click="curtir(comentario)">curtir
+        comentario</button>
     </div>
   </div>
 </template>

@@ -1,30 +1,35 @@
 <template>
-  <div>
+  <div class="post">
     <!-- post -->
-    <div class="post-container">
-      <div class="post-user">
+    <div class="post-content">
+      <div class="post-content__user">
         <img src="../../assets/logo.png" alt="user">
-        <span>Nome do user</span>
+        <span>{{ user.name }}</span>
       </div>
-      <p class="post-conteudo">{{post.message}}</p>
-
-      <div class="post-opinar">
-        <button class="post-like" :disabled="jaCurtiu" @click="curtir(post)">Curtir</button>
-        <div class="post-novo-comentario">
-          <!-- novo comentario -->
-
-          <div class="novo-comentario-position">
-            <label>
-              <input v-model="novoComentario.isAnonimo" type="checkbox">
-              Anônimo
-            </label>
+      <p class="post-content__text">{{post.message}}</p>
+      <div class="post-content__info">
+        <div class="group">
+          <div>
+            <button class="link" :class="{'active': jaCurtiu}" :disabled="jaCurtiu"
+                    @click="curtir(post)">
+              Curtir
+              <span>{{ post.like }}</span>
+            </button>
+            <button class="link" @click="showComentar = true">Comentar</button>
           </div>
-
-          <textarea v-model="novoComentario.message"></textarea>
+        </div>
+        <label class="link">
+          <input v-model="novoComentario.isAnonimo" type="checkbox">
+          Anônimo
+        </label>
+      </div>
+      <div class="post-content__new" v-if="showComentar">
+        <!-- novo comentario -->
+        <textarea v-model="novoComentario.message"></textarea>
+        <div class="group">
           <button @click="sendComentario(novoComentario)">Comentar</button>
         </div>
       </div>
-
     </div>
     <!-- comentarios -->
     <div class="posts-comentarios">
@@ -48,6 +53,12 @@ export default {
   ],
   created () {
     this.getComentarios()
+    this.$http
+      .get(`http://localhost:3000/users/${this.post.userId}`)
+      .then(response => response.json())
+      .then(response => {
+        this.user = response
+      })
   },
   data () {
     return {
@@ -58,7 +69,9 @@ export default {
         like: 0,
         isAnonimo: false,
         curtidores: []
-      }
+      },
+      user: {},
+      showComentar: false
     }
   },
   methods: {
@@ -67,6 +80,7 @@ export default {
         .post('http://localhost:3000/comentarios', comentario)
         .then(response => response.json())
         .then(novoComentario => {
+          this.showComentar = false
           this.post.comentarios.push(novoComentario)
           comentario.message = ''
         })
@@ -95,10 +109,12 @@ export default {
   },
   components: {
     HomeComentario
-  }
+  },
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  .post {
+    background-color: white;
+  }
 </style>

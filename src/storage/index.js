@@ -10,7 +10,7 @@ export default new Vuex.Store({
       'login': 'admin',
       'name': 'admin',
       'password': 'admin',
-      'isAdmin': true
+      'isAdmin': false
     }
   },
   mutations: {

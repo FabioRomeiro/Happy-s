@@ -77,15 +77,17 @@
       "idPost": 2,
       "idUsuario": 0,
       "message": "asdasd",
-      "like": 0,
+      "like": 1,
       "isAnonimo": false,
-      "curtidores": [],
+      "curtidores": [
+        0
+      ],
       "id": 2
     },
     {
       "idPost": 2,
       "idUsuario": 0,
-      "message": "ASDASDASDASDDSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "message": "ASDASDASDASDDSAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       "like": 0,
       "isAnonimo": false,
       "curtidores": [],
@@ -103,11 +105,78 @@
     {
       "idPost": 2,
       "idUsuario": 0,
-      "message": "adsdaadsdaadsdaadsdaadsdaadsdaadsda",
+      "message": "adsdaadsdaadsdaa dsdaadsdaadsdaadsda",
+      "like": 1,
+      "isAnonimo": false,
+      "curtidores": [
+        0
+      ],
+      "id": 5
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "",
       "like": 0,
       "isAnonimo": false,
       "curtidores": [],
-      "id": 5
+      "id": 6
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "dsasadasdsad",
+      "like": 0,
+      "isAnonimo": false,
+      "curtidores": [],
+      "id": 7
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "aaaaaaaaaa",
+      "like": 0,
+      "isAnonimo": false,
+      "curtidores": [],
+      "id": 8
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "dsdasdsdsad",
+      "like": 0,
+      "isAnonimo": false,
+      "curtidores": [],
+      "id": 9
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "sdfsdfsf",
+      "like": 0,
+      "isAnonimo": true,
+      "curtidores": [],
+      "id": 10
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "",
+      "like": 1,
+      "isAnonimo": false,
+      "curtidores": [
+        0
+      ],
+      "id": 11
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "sdfgsfdgdsf",
+      "like": 0,
+      "isAnonimo": false,
+      "curtidores": [],
+      "id": 12
     }
   ]
 }

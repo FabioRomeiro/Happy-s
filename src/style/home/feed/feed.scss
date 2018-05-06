@@ -3,18 +3,17 @@ body{
 }
 .feed {
     display: block;
-    height: 200px;
 
     .feed-posts{
         width: 100%;
-        background: #e3e3e3;
-        padding-top: 1%;
+        background: #f2f2f2;
+        padding: 24px 0;
+
         .feed-posts-post{
-            width: 70%;
-            margin: 3% auto;
+            width: 800px;
+            margin: 0 auto;
             background: #f7f7f7;
-            padding: 1%;
-            border: solid 2px #bdbdbd;
+
         }
     }
 }

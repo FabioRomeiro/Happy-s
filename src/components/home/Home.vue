@@ -1,11 +1,8 @@
 <template>
-  <main>
+  <div>
     <perfil-lateral/>
-
-    <div class="home-postagens">
-      <div>
-        <home-input @newPost="addNewPost"></home-input>
-      </div>
+    <main class="container">
+      <home-input @newPost="addNewPost"></home-input>
       <div class="conteudo">
         <div class="feed"
             v-infinite-scroll="loadMore"
@@ -18,8 +15,8 @@
           </ul>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script>
@@ -79,4 +76,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .container {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
 </style>
