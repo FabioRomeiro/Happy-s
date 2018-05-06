@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h4>comentario do {{ usuarioOwner.name }}</h4>
+      <h4>comentario do {{ user.name }}</h4>
       <p>message: {{ comentario.message }}</p>
       <p>like: {{ comentario.like }}</p>
       <p>anonimo: {{ comentario.isAnonimo }}</p>
@@ -18,7 +18,7 @@ export default {
   ],
   data () {
     return {
-      usuarioOwner: {},
+      user: {}
     }
   },
   methods: {
@@ -27,7 +27,7 @@ export default {
         .get(`http://localhost:3000/users/${this.comentario.idUsuario}`)
         .then(response => response.json())
         .then(response => {
-          this.usuarioOwner = response
+          this.user = response
         })
     },
     curtir (comentario) {

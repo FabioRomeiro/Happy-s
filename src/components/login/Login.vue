@@ -14,7 +14,7 @@
           <button @click="efetuarLogin(user)">ENTRAR</button>
         </div>
     </div>
-    <div class="banner-corpo"> 
+    <div class="banner-corpo">
       <div class="banner-image">
         <img src="../../assets/boi.svg" alt="boi">
       </div>
@@ -35,12 +35,12 @@
           </div>
         </div>
       </div>
-      
+
       <!--FAZER COMPONENTE SEPARADO-->
       <!-- <h1>[NomeDoProjeto]</h1>
       <p>Momentos de tristeza e dificuldade são momentos de fragilidade.</p>
       <p class="banner-fade-palavras">
-        <span>Uma</span> 
+        <span>Uma</span>
         <span class="keyword"><vue-typer :text='[message[0], message[1], message[2]]' :shuffle='true'></vue-typer></span>
       </p>
       <p>é sempre bem vinda nessas situações...</p>
@@ -72,7 +72,7 @@ export default {
         })
     }
   },
-  components : {
+  components: {
     VueTyper
   }
 }

@@ -8,10 +8,11 @@
 export default {
   name: 'App',
   created () {
-    if (!this.isLogado) this.$router.push('login')
+    if (!this.usuarioLogado) return this.$router.push('login')
+    if (this.usuarioLogado.isAdmin) return this.$router.push('admin')
   },
   computed: {
-    isLogado () {
+    usuarioLogado () {
       return this.$store.state.user
     }
   }

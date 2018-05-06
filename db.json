@@ -3,20 +3,23 @@
     {
       "id": 0,
       "login": "a",
-      "name": "usuario0",
-      "password": "a"
+      "name": "André",
+      "password": "a",
+      "isAdmin": true
     },
     {
       "id": 1,
       "login": "usuario1",
-      "name": "usuario1",
-      "password": "senha1"
+      "name": "Andressa",
+      "password": "senha1",
+      "isAdmin": false
     },
     {
       "id": 2,
       "login": "usuario2",
-      "name": "usuario2",
-      "password": "senha2"
+      "name": "Amanda",
+      "password": "senha2",
+      "isAdmin": false
     }
   ],
   "posts": [
@@ -69,6 +72,15 @@
         0
       ],
       "id": 1
+    },
+    {
+      "idPost": 2,
+      "idUsuario": 0,
+      "message": "asdasd",
+      "like": 0,
+      "isAnonimo": false,
+      "curtidores": [],
+      "id": 2
     }
   ]
 }

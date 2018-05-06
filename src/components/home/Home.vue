@@ -29,7 +29,7 @@ import PerfilLateral from '../perfilLateral/PerfilLateral.vue'
 
 export default {
   created () {
-    if (!this.isLogado) this.$router.push('login')
+    if (!this.usuarioLogado) this.$router.push('login')
     this.loadMore()
   },
   data () {
@@ -62,7 +62,7 @@ export default {
     }
   },
   computed: {
-    isLogado () {
+    usuarioLogado () {
       return this.$store.state.user
     },
     postsByDate () {
