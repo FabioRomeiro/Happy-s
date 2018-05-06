@@ -18,9 +18,7 @@ import Feed from './Feed.vue'
 
 export default {
   created () {
-    if (!this.isLogado) {
-      this.$router.push('login')
-    }
+    if (!this.isLogado) this.$router.push('login')
   },
   computed: {
     isLogado () {

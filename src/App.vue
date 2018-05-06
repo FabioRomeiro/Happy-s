@@ -8,9 +8,7 @@
 export default {
   name: 'App',
   created () {
-    if (!this.isLogado) {
-      this.$router.push('login')
-    }
+    if (!this.isLogado) this.$router.push('login')
   },
   computed: {
     isLogado () {

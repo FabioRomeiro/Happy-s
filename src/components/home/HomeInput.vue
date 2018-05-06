@@ -16,11 +16,24 @@ export default {
   name: 'HomeInput',
   data () {
     return {
-      post: {}
+      post: {
+        message: '',
+        isAnonimo: false,
+        userId: this.$store.state.user.id
+      }
     }
   },
   methods: {
-
+    sendPost () {
+      this.$http
+        .post('http://localhost:3000/posts', this.post)
+        .then(() => { this.post.message = '' })
+    }
+  },
+  computed: {
+    getUserLogadoId () {
+      return this.$store.state.user.id
+    }
   }
 }
 </script>
