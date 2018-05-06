@@ -13,45 +13,64 @@
     <div>
       <ul>
         <li v-for="comentario in post.comentarios" :key="comentario.id">
-          {{ comentario.message }}
+          <home-comentario :comentario="comentario"></home-comentario>
         </li>
       </ul>
     </div>
     <!-- novo comentario -->
     <div>
       <textarea v-model="novoComentario.message"></textarea>
+      <label>
+        <input v-model="novoComentario.isAnonimo" type="checkbox">
+        Anônimo
+      </label>
       <button @click="sendComentario(novoComentario)">comentar</button>
     </div>
   </div>
 </template>
 
 <script>
+import HomeComentario from './HomeComentario'
+
 export default {
   name: 'HomePost',
   props: [
     'post'
   ],
+  created () {
+    this.getComentarios()
+  },
   data () {
     return {
       novoComentario: {
         idPost: this.post.id,
         idUsuario: this.$store.state.user.id,
         message: '',
-        like: 0
+        like: 0,
+        isAnonimo: false,
+        curtidores: []
       }
     }
   },
   methods: {
     sendComentario (comentario) {
-
       this.$http
         .post('http://localhost:3000/comentarios', comentario)
-        .then(() => {
-          const novoComentario = Object.assign({}, comentario)
+        .then(response => response.json())
+        .then(novoComentario => {
           this.post.comentarios.push(novoComentario)
           comentario.message = ''
         })
+    },
+    getComentarios () {
+      this.$http
+        .get('http://localhost:3000/comentarios')
+        .then(response => response.json())
+        .then(response => { this.post.comentarios = response })
     }
+  },
+  components: {
+    HomeComentario
   }
 }
 </script>

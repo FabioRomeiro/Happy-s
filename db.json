@@ -37,89 +37,48 @@
       "id": 2
     },
     {
-      "message": "sadsadsadsad",
+      "message": "kkl",
       "isAnonimo": false,
+      "userId": 0,
       "comentarios": [],
-      "date": "2018-05-06T05:30:04.843Z",
+      "title": "ç,,ç",
+      "date": "2018-05-06T04:34:42.596Z",
       "id": 3
-    },
-    {
-      "message": "sdsadsadsad",
-      "isAnonimo": false,
-      "comentarios": [],
-      "date": "2018-05-06T05:31:02.196Z",
-      "id": 4
-    },
-    {
-      "message": "AAAAAAAAAAAAAAAAAAAAAAAA",
-      "isAnonimo": false,
-      "comentarios": [],
-      "date": "2018-05-06T05:31:06.655Z",
-      "title": "",
-      "id": 5
     }
   ],
   "comentarios": [
     {
-      "idPost": 1,
-      "message": "sdfsdfdsf",
-      "like": 0,
+      "idPost": 3,
+      "idUsuario": 0,
+      "message": "asdasdsadsad",
+      "like": 1,
+      "isAnonimo": false,
+      "curtidores": [
+        0
+      ],
       "id": 1
     },
     {
-      "idPost": 1,
-      "message": "ssss",
-      "like": 0,
+      "idPost": 3,
+      "idUsuario": 0,
+      "message": "ewrewr",
+      "like": 1,
+      "isAnonimo": false,
+      "curtidores": [
+        0
+      ],
       "id": 2
     },
     {
-      "idPost": 1,
-      "message": "ssssaaaaa",
-      "like": 0,
+      "idPost": 3,
+      "idUsuario": 0,
+      "message": "sasasass",
+      "like": 1,
+      "isAnonimo": false,
+      "curtidores": [
+        0
+      ],
       "id": 3
-    },
-    {
-      "idPost": 1,
-      "message": "ssssaaaaa",
-      "like": 0,
-      "id": 4
-    },
-    {
-      "message": "dsdsdsd",
-      "like": 0,
-      "id": 5
-    },
-    {
-      "message": "dsdsdsdaaaaaaa",
-      "like": 0,
-      "id": 6
-    },
-    {
-      "idPost": 1,
-      "message": "dsfdsf",
-      "like": 0,
-      "id": 7
-    },
-    {
-      "idPost": 1,
-      "message": "sdfsdfdsf",
-      "like": 0,
-      "id": 8
-    },
-    {
-      "message": "DSFSDFSDF",
-      "like": 0,
-      "id": 9
-    },
-    {
-      "message": "SSSSSSSSS",
-      "like": 0,
-      "id": 10
-    },
-    {
-      "message": "FFFFFFFFF",
-      "like": 0,
-      "id": 11
     }
   ]
 }

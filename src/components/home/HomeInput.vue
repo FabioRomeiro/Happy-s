@@ -33,8 +33,8 @@ export default {
       post.date = new Date()
       this.$http
         .post('http://localhost:3000/posts', post)
-        .then(() => {
-          const newPost = Object.assign({}, post)
+        .then(response => response.json())
+        .then(newPost => {
           this.$emit('newPost', newPost)
           this.post.message = ''
           this.post.title = ''
