@@ -1,13 +1,30 @@
 <template>
   <div class="pagina-principal">
     <div @keyup.enter="efetuarLogin(user)" class="login-corpo">
-        <h2>Entre em sua conta:</h2>
-        <input v-model="user.login" type="text" placeholder="login">
-        <input v-model="user.password" type="password" placeholder="password">
-        <button @click="efetuarLogin(user)">Login</button>
+        <h1 class="titulo">Happy's</h1>
+        <div class="login-input">
+          <section>
+            <label for="email">E-mail</label>
+            <input name="email" v-model="user.login" type="text" placeholder="">
+          </section>
+          <section>
+            <label for="email">Senha</label>
+            <input name="senha" v-model="user.password" type="password">
+          </section>
+          <button @click="efetuarLogin(user)">ENTRAR</button>
+        </div>
     </div>
-    <div class="banner-corpo"> <!--FAZER COMPONENTE SEPARADO-->
-      <h1>[NomeDoProjeto]</h1>
+    <div class="banner-corpo"> 
+      <div class="banner-image">
+        <img src="../../assets/boi.svg" alt="boi">
+      </div>
+      <div class="banner-info">
+        <h3>Um lugar para</h3>
+        <span class="keyword"><vue-typer :text='[message[0], message[1]]' :shuffle='true'></vue-typer></span>
+      </div>
+      
+      <!--FAZER COMPONENTE SEPARADO-->
+      <!-- <h1>[NomeDoProjeto]</h1>
       <p>Momentos de tristeza e dificuldade são momentos de fragilidade.</p>
       <p class="banner-fade-palavras">
         <span>Uma</span> 
@@ -15,7 +32,7 @@
       </p>
       <p>é sempre bem vinda nessas situações...</p>
       <p>Pensando na sua felicidade e tranquilidade, [a/o] [NomeDoProjeto] concentra estas pequenas palavras que te trarão um grande conforto</p>
-      <p></p>
+      <p></p> -->
     </div>
   </div>
 </template>
@@ -26,7 +43,7 @@ export default {
   data () {
     return {
       user: {},
-      message : ['palavra amiga', 'experiência', 'história']
+      message : ['ajudar', 'ser ajudado']
     }
   },
   methods: {
