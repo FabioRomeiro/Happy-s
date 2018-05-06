@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h1>ranking</h1>
-    <ul>
+    <ul class="admin-ranking-corpo">
+      <li class="ranking-headers">
+        <span>Nome</span>
+        <span>Curtidas</span>
+        <span>Comentários</span>
+        <span>Balanço</span>
+      </li>
       <li v-for="user in users" :key="user.id">
-        <p>{{ user.name }}</p>
-        <p>likes: {{ getAllLikes(user) }}</p>
-        <p>comentarios {{ getAllComentarios(user) }}</p>
+        <p class="ranking-nome">{{ user.name }}</p>
+        <p>{{ getAllLikes(user) }}</p>
+        <p>{{ getAllComentarios(user) }}</p>
+        <p>{{ getAllLikes(user) - getAllComentarios(user) }}</p>
       </li>
     </ul>
   </div>

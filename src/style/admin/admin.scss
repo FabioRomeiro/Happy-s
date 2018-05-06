@@ -1,0 +1,25 @@
+.admin-corpo{
+    background: rgb(238, 238, 238);
+    padding: 3%;
+}
+
+.admin-corpo-menu{
+    display: flex;
+    justify-content: center;
+
+    li{
+        padding: 0 30px;
+        padding-bottom: 20px;
+        
+        a{
+            color: rgb(80, 80, 80);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}

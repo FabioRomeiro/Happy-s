@@ -1,26 +1,32 @@
 <template>
-  <main>
-    <div>
+  <main class="admin-funcionarios-corpo">
+    <div class="funcionarios-pesquisa">
       <input v-model="search" placeholder="Pesquisar" type="text">
-      <ul>
+      <ul class="funcionarios-lista">
         <li @click="setUsuarioLogado(user)"
             v-for="user in filtroUsuarios"
             :key="user.id">{{user.name }}</li>
       </ul>
     </div>
-    <div v-if="usuarioSelecionado">
-      <img src="" alt="foto do usuario">
-      <h4>{{ usuarioSelecionado.name }}</h4>
-      <p>{{ usuarioSelecionado.cargo }}</p>
-      <div>
-        <span>{{ curtidasNoPost }}</span>
-        <p>Curtidas no post</p>
-        <button>Ver posts</button>
+    <div v-if="usuarioSelecionado" class="funcionario-selecionado">
+      <div class="selecionado-info">
+        <img src="../../assets/logo.png" alt="foto do usuario">
+        <div class="selecionado-info-ocupacao">
+          <h4>{{ usuarioSelecionado.name }}</h4>
+          <p>{{ usuarioSelecionado.cargo }}</p>
+        </div>
       </div>
-      <div>
-        <span>{{ curtidasEmComentario }}</span>
-        <p>Curtidas em comentarios</p>
-        <button>Dar feedback</button>
+      <div class="funcionario-dados">
+        <div class="dado">
+          <span class="numero">{{ curtidasNoPost }}</span>
+          <p>Curtidas no post</p>
+          <button>Ver posts</button>
+        </div>
+        <div class="dado">
+          <span class="numero">{{ curtidasEmComentario }}</span>
+          <p>Curtidas em comentarios</p>
+          <button>Dar feedback</button>
+        </div>
       </div>
     </div>
   </main>
