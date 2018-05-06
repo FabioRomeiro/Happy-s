@@ -3,8 +3,10 @@
     <!-- post -->
     <div class="post-content">
       <div class="post-content__user">
-        <img src="../../assets/logo.png" alt="user">
-        <span>{{ user.name }}</span>
+          <img v-if="!post.isAnonimo" src="../../assets/logo.png" alt="user">
+          <span v-if="!post.isAnonimo">{{ user.name }}</span>
+          <img v-if="post.isAnonimo" src="../../assets/profile/0.jpg" alt="user">
+          <span v-if="post.isAnonimo">Anônimo</span>
       </div>
       <p class="post-content__text">{{post.message}}</p>
       <div class="post-content__info">
@@ -87,7 +89,7 @@ export default {
     },
     getComentarios () {
       this.$http
-        .get('http://localhost:3000/comentarios')
+        .get(`http://localhost:3000/comentarios?idPost=${this.post.id}`)
         .then(response => response.json())
         .then(response => { this.post.comentarios = response })
     },
@@ -109,7 +111,7 @@ export default {
   },
   components: {
     HomeComentario
-  },
+  }
 }
 </script>
 

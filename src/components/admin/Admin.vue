@@ -22,9 +22,16 @@ export default {
   components: {
     PerfilLateral
   },
+  created () {
+    if (!this.usuarioLogado) this.$router.push('login')
+    if (!this.usuarioLogado.isAdmin) return this.$router.push('login')
+  },
   computed: {
     funcionariosRoute () {
       return '/admin/funcionarios'
+    },
+    usuarioLogado () {
+      return this.$store.state.user
     },
     rankingRoute () {
       return '/admin/ranking'

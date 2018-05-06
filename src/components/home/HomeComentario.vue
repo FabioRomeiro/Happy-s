@@ -1,13 +1,16 @@
 <template>
   <div class="home-comentario-corpo">
-    <img src="../../assets/logo.png" alt="foto">
+    <img v-if="!comentario.isAnonimo" src="../../assets/logo.png" alt="foto">
+    <img v-if="comentario.isAnonimo" src="../../assets/profile/0.jpg" alt="foto">
     <div>
       <div class="home-comentario-item">
-        <h4>{{ user.name }}</h4>
+        <h4 v-if="!comentario.isAnonimo">{{ user.name }}</h4>
+        <h4 v-if="comentario.isAnonimo">Anônimo</h4>
         <p>{{ comentario.message }}</p>
       </div>
-      <button class="link" :class="{'active': jaCurtiu}" :disabled="jaCurtiu" @click="curtir(comentario)">curtir
-        comentario</button>
+      <button class="link" :class="{'active': jaCurtiu}" :disabled="jaCurtiu" @click="curtir(comentario)">
+        curtir {{ comentario.like }}
+      </button>
     </div>
   </div>
 </template>
@@ -55,5 +58,7 @@ export default {
 </script>
 
 <style scoped>
-
+  img {
+    border: 2px solid #a5a5a5;
+  }
 </style>

@@ -46,7 +46,14 @@ export default {
       }, 0)
     }
   },
+  computed: {
+    usuarioLogado () {
+      return this.$store.state.user
+    }
+  },
   created () {
+    if (!this.usuarioLogado) this.$router.push('login')
+    if (!this.usuarioLogado.isAdmin) return this.$router.push('login')
     this.$http
       .get(`http://localhost:3000/posts`)
       .then(response => response.json())

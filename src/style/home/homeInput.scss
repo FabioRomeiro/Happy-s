@@ -45,9 +45,12 @@
       padding: 12px 16px;
       border-radius: 3px;
       cursor: pointer;
-      font-size: 20px;
       height: auto;
       font-weight: lighter;
+
+      &:hover {
+        background-color: lighten(#fdc741, 10%);
+      }
     }
   }
 }
