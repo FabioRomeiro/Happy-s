@@ -10,20 +10,20 @@
 </template>
 
 <script>
-    export default{
-        data(){
-            return{
-                userInfo : {
-                    "id" : 0,
-                    "login" : "flromeiroc",
-                    "password" : "teste123",
-                    "name" : "Fabio",
-                    "sentimentos" : 65
-                }
-            }
-        },
-        created(){
-            
-        }
+export default{
+  data () {
+    return {
+      userInfo: {
+        'id': 0,
+        'login': 'flromeiroc',
+        'password': 'teste123',
+        'name': 'Fabio',
+        'sentimentos': 65
+      }
     }
+  }
+}
 </script>
+
+<style>
+</style>

@@ -1,10 +1,10 @@
 <template>
   <main>
+    <perfil-lateral/>
     <div>
       <h2>PAGINA HOME</h2>
       <home-input></home-input>
     </div>
-    <perfil-lateral/>
     <div class="conteudo">
       <feed/>
     </div>

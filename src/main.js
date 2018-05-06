@@ -2,15 +2,16 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueResource from 'vue-resource'
+import infiniteScroll from 'vue-infinite-scroll'
 import App from './App'
 import router from './router'
-import InfiniteLoading from 'vue-infinite-loading'
-import store from './storage/index'
+import store from './storage/'
 import './style/app.scss'
 
 Vue.config.productionTip = false
 
 Vue.use(VueResource)
+Vue.use(infiniteScroll)
 
 /* eslint-disable no-new */
 new Vue({
@@ -18,5 +19,8 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
-  store
+  store,
+  directives: {
+    infiniteScroll
+  }
 })

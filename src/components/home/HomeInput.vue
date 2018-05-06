@@ -1,5 +1,6 @@
 <template>
   <div>
+    <input v-model="post.title" type="text" placeholder="titulo">
     <textarea v-model="post.message"></textarea>
     <div>
       <label>
@@ -27,7 +28,10 @@ export default {
     sendPost () {
       this.$http
         .post('http://localhost:3000/posts', this.post)
-        .then(() => { this.post.message = '' })
+        .then(() => {
+          this.post.message = ''
+          this.post.title = ''
+        })
     }
   },
   computed: {
