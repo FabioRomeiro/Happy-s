@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Login from '@/components/login/Login'
 import Home from '@/components/home/Home'
 import Admin from '@/components/admin/Admin'
+import AdminFuncionarios from '@/components/admin/AdminFuncionarios'
+import AdminRanking from '@/components/admin/AdminRanking'
 
 Vue.use(Router)
 
@@ -26,7 +28,19 @@ export default new Router({
     {
       path: '/admin',
       name: 'admin',
-      component: Admin
+      component: Admin,
+      children: [
+        {
+          path: 'funcionarios',
+          name: 'funcionarios',
+          component: AdminFuncionarios
+        },
+        {
+          path: 'ranking',
+          name: 'ranking',
+          component: AdminRanking
+        }
+      ]
     }
   ]
 })
