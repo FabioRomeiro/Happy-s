@@ -24,7 +24,9 @@ export default {
         message: '',
         isAnonimo: false,
         userId: this.$store.state.user.id,
-        comentarios: []
+        comentarios: [],
+        curtidores: [],
+        like: 0
       }
     }
   },
