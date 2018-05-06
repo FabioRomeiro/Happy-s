@@ -35,10 +35,10 @@ export default{
       return this.$store.state.user
     }
   },
-  methods:{
+  methods: {
     avisaLogout () {
       this.visivel = !this.visivel
-      return this.visivel;
+      return this.visivel
     },
     logout () {
       this.$store.commit('setUser', null)

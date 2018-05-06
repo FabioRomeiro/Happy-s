@@ -56,7 +56,7 @@ export default {
   data () {
     return {
       user: {},
-      message : ['ajudar!', 'ser ajudado!']
+      message: ['ajudar!', 'ser ajudado!']
     }
   },
   methods: {

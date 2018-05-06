@@ -37,6 +37,5 @@ export default {
       return '/admin/ranking'
     }
   }
-
 }
 </script>
