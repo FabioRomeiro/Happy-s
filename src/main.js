@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueResource)
 Vue.use(infiniteScroll)
+Vue.use(require('vue-moment'))
 
 /* eslint-disable no-new */
 new Vue({

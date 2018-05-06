@@ -26,9 +26,12 @@ export default {
   },
   methods: {
     sendPost () {
+      this.post.date = new Date()
       this.$http
         .post('http://localhost:3000/posts', this.post)
         .then(() => {
+          const newPost = Object.assign({}, this.post)
+          this.$emit('newPost', newPost)
           this.post.message = ''
           this.post.title = ''
         })
