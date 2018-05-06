@@ -9,3 +9,26 @@
 @import 'admin/adminRanking';
 @import 'admin/adminFuncionario';
 @import 'login/login';
+
+//---------------------------------------------
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+body{
+    background:#ffe583;
+    font-family:'Roboto', sans-serif;
+}
+
+.vue-typer {
+  color: #9f7a23;
+ 
+  .custom.char {
+    color: #9f7a23;
+  }
+  .custom.caret {
+    background: #9f7a23;
+  }
+}

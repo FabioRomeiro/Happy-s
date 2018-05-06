@@ -5,13 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    user: {
-      'id': 0,
-      'login': 'admin',
-      'name': 'admin',
-      'password': 'admin',
-      'isAdmin': false
-    }
+    user: null
   },
   mutations: {
     setUser (state, user) {

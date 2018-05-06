@@ -15,7 +15,28 @@
       "isAdmin": false
     },
     {
-      "id": 2,
+      "id": 3,
+      "login": "usuario2",
+      "name": "Amanda",
+      "password": "senha2",
+      "isAdmin": false
+    },
+    {
+      "id": 4,
+      "login": "usuario2",
+      "name": "Amanda",
+      "password": "senha2",
+      "isAdmin": false
+    },
+    {
+      "id": 5,
+      "login": "usuario2",
+      "name": "Amanda",
+      "password": "senha2",
+      "isAdmin": false
+    },
+    {
+      "id": 6,
       "login": "usuario2",
       "name": "Amanda",
       "password": "senha2",
@@ -38,9 +59,7 @@
       "message": "Não procures a verdade fora de ti, ela está em ti, em teu ser. Não procures o conhecimento fora de ti, ele te aguarda em tua fé interior. Não procures a paz fora de ti, ela está instalada em teu coração. Não procures a felicidade fora de ti, ela habita em ti desde a eternidade.",
       "isAnonimo": false,
       "userId": 0,
-          "id": 1
-        }
-      ],
+          "id": 1,
       "curtidores": [
         0
       ],
@@ -53,9 +72,7 @@
       "message": "A felicidade não está em viver, mas em saber viver. Não vive mais o que mais vive, mas o que melhor vive, porque a vida não mede o tempo, mas o emprego que dela fazemos.",
       "isAnonimo": false,
       "userId": 0,
-          "id": 1
-        }
-      ],
+          "id": 1,
       "curtidores": [
         0
       ],
@@ -68,9 +85,7 @@
       "message": "As pessoas mais felizes raramente são as mais ricas, ou as mais bonitas, ou mesmo as mais talentosas. Seus olhos estão voltados para fora, compassivos. Eles têm a capacidade de amar.",
       "isAnonimo": false,
       "userId": 0,
-          "id": 1
-        }
-      ],
+          "id": 1,
       "curtidores": [
         0
       ],
@@ -83,9 +98,7 @@
       "message": "Um homem será tolo se alimentar desejos pelos privilégios, promoção, lucros ou pela honra, pois tais desejos nunca trazem felicidade, pelo contrário, apenas trazem sofrimentos.",
       "isAnonimo": false,
       "userId": 0,
-          "id": 1
-        }
-      ],
+          "id": 1,
       "curtidores": [
         0
       ],

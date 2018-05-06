@@ -11,7 +11,8 @@
         <img src="../../assets/notificacao.svg" alt="notificacoes">
       </div>
     </div>
-    <div class="perfil-lateral-user">
+    <div @click="avisaLogout()" class="perfil-lateral-user">
+      <span @click="logout()" class="logout" v-if="visivel">Sair da Seção?</span>
       <h3 class="perfil-lateral-username">
         {{usuarioLogado.name}}
       </h3>
@@ -24,18 +25,22 @@
 export default{
   data () {
     return {
-      userInfo: {
-        'id': 0,
-        'login': 'flromeiroc',
-        'password': 'teste123',
-        'name': 'Fabio',
-        'sentimentos': 65
-      }
+      visivel : false
     }
   },
   computed: {
     usuarioLogado () {
       return this.$store.state.user
+    }
+  },
+  methods:{
+    avisaLogout(){
+      this.visivel = !this.visivel
+      return this.visivel;
+    },
+    logout(){
+      this.$store.commit('setUser',null);
+      this.route.push('login');
     }
   }
 }

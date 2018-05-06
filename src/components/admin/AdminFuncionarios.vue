@@ -20,12 +20,12 @@
         <div class="dado">
           <span class="numero">{{ curtidasNoPost }}</span>
           <p>Curtidas no post</p>
-          <button>Ver posts</button>
+          
         </div>
         <div class="dado">
           <span class="numero">{{ curtidasEmComentario }}</span>
           <p>Curtidas em comentarios</p>
-          <button>Dar feedback</button>
+          
         </div>
       </div>
     </div>
