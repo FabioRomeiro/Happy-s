@@ -30,7 +30,7 @@
       "curtidores": [],
       "like": 0,
       "date": "2018-05-06T06:21:24.758Z",
-      "id": 0
+     gi  "id": 0
     },
     {
       "message": "Não procures a verdade fora de ti, ela está em ti, em teu ser. Não procures o conhecimento fora de ti, ele te aguarda em tua fé interior. Não procures a paz fora de ti, ela está instalada em teu coração. Não procures a felicidade fora de ti, ela habita em ti desde a eternidade.",
@@ -125,51 +125,6 @@
           "id": 12
         }
       ]
-    },
-    {
-      "message": "aaaaaaaaaaaaaaaa",
-      "isAnonimo": false,
-      "userId": 0,
-      "comentarios": [],
-      "curtidores": [],
-      "like": 0,
-      "date": "2018-05-06T15:16:04.483Z",
-      "id": 8
-    },
-    {
-      "message": "ajudaaaa",
-      "isAnonimo": true,
-      "userId": 0,
-      "comentarios": [
-        {
-          "idPost": 9,
-          "idUsuario": 0,
-          "message": "testandi ",
-          "like": 0,
-          "isAnonimo": false,
-          "curtidores": [],
-          "id": 26
-        }
-      ],
-      "curtidores": [
-        0
-      ],
-      "like": 1,
-      "date": "2018-05-06T15:16:23.638Z",
-      "title": "",
-      "id": 9
-    },
-    {
-      "message": "dsdsd",
-      "isAnonimo": false,
-      "userId": 1,
-      "comentarios": [],
-      "curtidores": [
-        0
-      ],
-      "like": 1,
-      "date": "2018-05-06T15:17:40.375Z",
-      "id": 10
     }
   ],
   "comentarios": [
@@ -334,33 +289,6 @@
       "isAnonimo": false,
       "curtidores": [],
       "id": 24
-    },
-    {
-      "idPost": 8,
-      "idUsuario": 0,
-      "message": "ajudaaa",
-      "like": 0,
-      "isAnonimo": false,
-      "curtidores": [],
-      "id": 25
-    },
-    {
-      "idPost": 9,
-      "idUsuario": 0,
-      "message": "testandi ",
-      "like": 0,
-      "isAnonimo": false,
-      "curtidores": [],
-      "id": 26
-    },
-    {
-      "idPost": 5,
-      "idUsuario": 1,
-      "message": "sssssssssssss",
-      "like": 0,
-      "isAnonimo": false,
-      "curtidores": [],
-      "id": 27
     }
   ]
 }
