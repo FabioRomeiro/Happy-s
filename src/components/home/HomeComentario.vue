@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="home-comentario-corpo">
+    <img src="../../assets/logo.png" alt="foto">
     <div>
-      <h4>comentario do {{ user.name }}</h4>
-      <p>message: {{ comentario.message }}</p>
-      <p>like: {{ comentario.like }}</p>
-      <p>anonimo: {{ comentario.isAnonimo }}</p>
+      <div class="home-comentario-item">
+        <h4>{{ user.name }}</h4>
+        <p>{{ comentario.message }}</p>
+      </div>
+      <button :disabled="jaCurtiu" @click="curtir(comentario)">curtir comentario</button>
     </div>
-    <button :disabled="jaCurtiu" @click="curtir(comentario)">curtir comentario</button>
   </div>
 </template>
 

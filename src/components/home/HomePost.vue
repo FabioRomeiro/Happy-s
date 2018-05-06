@@ -3,7 +3,7 @@
     <!-- post -->
     <div class="post-container">
       <div class="post-user">
-        <img src="" alt="user">
+        <img src="../../assets/logo.png" alt="user">
         <span>Nome do user</span>
       </div>
       <p class="post-conteudo">{{post.message}}</p>
@@ -18,16 +18,16 @@
               <input v-model="novoComentario.isAnonimo" type="checkbox">
               Anônimo
             </label>
-            <button @click="sendComentario(novoComentario)">Comentar</button>
           </div>
 
           <textarea v-model="novoComentario.message"></textarea>
+          <button @click="sendComentario(novoComentario)">Comentar</button>
         </div>
       </div>
 
     </div>
     <!-- comentarios -->
-    <div>
+    <div class="posts-comentarios">
       <ul>
         <li v-for="comentario in post.comentarios" :key="comentario.id">
           <home-comentario :comentario="comentario"></home-comentario>
